@@ -1,0 +1,18 @@
+<table style="width:900px" align="center">
+  <tr>
+    <th>Name</th>
+    <th>Number</th>
+    <th>Job</th>
+    <th>Industry</th>
+    <th>Email</th>
+  </tr>
+<% @users.each do |user| %>
+  <tr>
+    <td><%= user.name %></td>
+    <td><%= user.number %></td>
+    <td><%= user.job %></td>
+    <td><%= user.industry %></td>
+    <td><%= user.email %></td>
+  </tr>
+<% end %>
+</table>
